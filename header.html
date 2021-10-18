@@ -1,0 +1,151 @@
+<html>
+    <head>
+        <title>header</title>
+    </head>
+    
+<script>
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "250px";
+    }
+    
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+    }
+</script>
+<body>
+<style>
+body {
+  font-family: "Lato", sans-serif;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+  
+}
+
+
+.nav
+{
+width: 100%;
+background-color: #fff;
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+align-items: center;
+padding: 20px 2%;
+position: fixed;
+top: 0px;
+z-index: 10;
+box-shadow: 1px 1px 10px rgba(0,0,0,0.5);
+}
+
+.nav li, a, button
+{
+width: 100%;
+float: left;
+font-family: "Montserrat", sans-serif;
+font-weight: 500;
+font-size: 13px;
+color: #2E3D49;
+display: block;
+text-decoration: none;
+text-align: center;
+}
+
+.nav ul li img {
+width: 20px;
+margin-right: 10px;
+transform: translateY(5px);
+padding-top: 5px;
+}
+
+.nav ul li 
+{
+list-style: none;
+display: inline-block;
+padding: 0px 20px;
+}
+
+.nav ul li a
+{
+transition: all 0.3s ease 0s;
+}
+
+.nav ul li a:hover
+{
+color: #FA4B37;
+}
+
+.nav button
+{
+padding: 9px 25px;
+background: linear-gradient(to right, #FA4B37, #DF2771);
+color: #fff;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+outline: none;
+transition: all 0.3s ease 0s;
+}
+</style>
+
+<header>
+<div class="nav" id="nav">
+        <div id="learned-logo">
+        <a href="../index.html"><img src="../images/icon/logo.png" style="width: 120px;"></a></div>
+        <div class="switch-tab" id="switch-tab" onclick="switchTAB()"><img src="../images/icon/menu.png"></div>
+        <ul id="list-switch">
+            <div id="mySidenav" class="sidenav">
+            
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="#">About</a>
+                <a href="#">Services</a>
+                <a href="#">Clients</a>
+                <a href="#">Contact</a>
+              
+              </div>
+        </ul>
+        
+    </div>
+    <div class="logo"><img src="images/icon/logo.png"></div>
+        
+    <span style="font-size:30px;cursor:pointer" onclick="openNav()"> &ensp;   &#9776; </span>
+        
+</header>
+</body>
+</html>
